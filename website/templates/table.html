@@ -1,0 +1,18 @@
+{% extends "template.html" %}
+
+{% block body %}
+  <table style="width:50%">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Address</th>
+    </tr>
+    {% for person in persons %}
+      <tr>
+        <th>{{person.name}}</th>
+        <th>{{person.age}}</th>
+        <th>{{person.location}}</th>
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
